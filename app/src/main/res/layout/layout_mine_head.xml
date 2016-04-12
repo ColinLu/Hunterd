@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/fragment_mine"
+    android:gravity="bottom">
+
+    <com.colin.hunter.view.CircleImageView
+        android:id="@+id/image_mine_head"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/text_mine_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linear_mine_button"
+        android:layout_below="@id/image_mine_head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/title_top_bar_height"
+        android:layout_marginTop="8dp"
+        android:text="Colin"
+        android:textColor="@color/black_text"
+        android:textSize="@dimen/text_size_ii" />
+
+    <LinearLayout
+        android:id="@+id/linear_mine_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#66000000"
+        android:showDividers="middle">
+
+        <Button
+            android:id="@+id/button_mine_register"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/title_top_bar_height"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:text="@string/register"
+            android:textColor="@color/text_select_white" />
+
+
+        <Button
+            android:id="@+id/button_mine_login"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/title_top_bar_height"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:text="@string/login"
+            android:textColor="@color/text_select_white" />
+    </LinearLayout>
+</RelativeLayout>

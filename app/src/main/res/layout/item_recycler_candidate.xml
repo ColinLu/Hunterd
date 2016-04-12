@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/button_select_white"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="@dimen/image_head_width"
+            android:layout_height="@dimen/image_head_height">
+
+            <ImageView
+                android:id="@+id/image_item_candidate_head"
+                style="@style/ImageViewHeadStyle"
+                android:src="@mipmap/user_head" />
+
+            <TextView
+                android:id="@+id/text_item_candidate_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/translucent"
+                android:gravity="center"
+                android:padding="@dimen/margin_gap"
+                android:singleLine="true"
+                android:text="@string/text_item_candidate_state"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_head_height"
+            android:orientation="vertical"
+            android:paddingLeft="20dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_item_candidate_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/text_item_candidate_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_i" />
+
+                <TextView
+                    android:id="@+id/text_item_candidate_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/margin_small"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/sex"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_i" />
+
+                <TextView
+                    android:id="@+id/text_item_candidate_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/margin_small"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/text_item_candidate_age"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_i" />
+
+                <TextView
+                    android:id="@+id/text_item_candidate_salary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/margin_small"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/text_item_candidate_salary"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_i" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left"
+                android:singleLine="true"
+                android:text="6年工作经验"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_i" />
+
+            <TextView
+                android:id="@+id/text_item_candidate_position_now"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left"
+                android:singleLine="true"
+                android:text="目前职位：  工程总监"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_i" />
+
+            <TextView
+                android:id="@+id/text_item_candidate_address_now"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left"
+                android:singleLine="true"
+                android:text="现所在地：重庆"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_i" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_medium_hight"
+        android:layout_marginBottom="@dimen/margin_gap"
+        android:layout_marginTop="@dimen/margin_gap"
+        android:background="@drawable/layout_background_gray"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_gap">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:singleLine="true"
+            android:text="第一学历： 本科 |  复旦大学" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:singleLine="true"
+            android:text="第二学历： 硕士 |  北京大学" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:singleLine="true"
+            android:text="期望城市：上海；北京" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_item_order_candidate_label"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        tools:listitem="@layout/item_recycler_candidate_label">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <View style="@style/LineHorizontalStyle" />
+
+    <LinearLayout
+        android:id="@+id/linear_item_order_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_top_bar_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_item_candidate_feedback"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_small"
+            android:layout_weight="1"
+            android:background="@drawable/layout_background_gray"
+            android:gravity="center"
+            android:padding="@dimen/padding_small"
+            android:paddingLeft="10dp"
+            android:text="反馈记录"
+            android:textColor="@color/blue_app" />
+
+        <TextView
+            android:id="@+id/text_item_candidate_recommend_record"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_small"
+            android:layout_weight="1"
+            android:background="@drawable/layout_background_gray"
+            android:gravity="center"
+            android:padding="@dimen/padding_small"
+            android:paddingLeft="10dp"
+            android:text="推荐记录"
+            android:textColor="@color/blue_app" />
+
+        <TextView
+            android:id="@+id/text_item_candidate_recommend_position_finish"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_small"
+            android:layout_weight="1"
+            android:background="@drawable/layout_background_gray"
+            android:gravity="center"
+            android:padding="@dimen/padding_small"
+            android:paddingLeft="10dp"
+            android:text="已推荐职位"
+            android:textColor="@color/blue_app" />
+
+        <TextView
+            android:id="@+id/text_item_candidate_interview_record"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_small"
+            android:layout_weight="1"
+            android:background="@drawable/layout_background_gray"
+            android:gravity="center"
+            android:padding="@dimen/padding_small"
+            android:paddingLeft="10dp"
+            android:text="访谈记录"
+            android:textColor="@color/blue_app" />
+
+        <TextView
+            android:id="@+id/text_item_candidate_recommend_state"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_small"
+            android:layout_weight="1"
+            android:background="@drawable/layout_background_gray"
+            android:gravity="center"
+            android:padding="@dimen/padding_small"
+            android:paddingLeft="10dp"
+            android:text="推荐状态"
+            android:textColor="@color/blue_app" />
+
+        <TextView
+            android:id="@+id/text_item_candidate_recommend_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_small"
+            android:layout_weight="1"
+            android:background="@drawable/layout_background_gray"
+            android:gravity="center"
+            android:padding="@dimen/padding_small"
+            android:paddingLeft="10dp"
+            android:text="确定推荐"
+            android:textColor="@color/blue_app" />
+
+        <TextView
+            android:id="@+id/text_item_candidate_recommend_position"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_small"
+            android:layout_weight="1"
+            android:background="@drawable/layout_background_gray"
+            android:gravity="center"
+            android:padding="@dimen/padding_small"
+            android:paddingLeft="10dp"
+            android:text="推荐职位"
+            android:textColor="@color/blue_app" />
+    </LinearLayout>
+</LinearLayout>

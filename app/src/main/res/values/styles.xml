@@ -1,0 +1,135 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppStyle" parent="AppTheme.NoActionBar">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/app_main_background</item>
+    </style>
+
+    <style name="LineHorizontalStyle">
+        <item name="android:layout_height">@dimen/line_view_small</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/margin_medium</item>
+        <item name="android:layout_marginRight">@dimen/margin_medium</item>
+        <item name="android:background">@color/gray_iii</item>
+    </style>
+
+    <style name="LineVerticalStytle">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">@dimen/line_view_small</item>
+        <item name="android:layout_marginTop">@dimen/margin_small</item>
+        <item name="android:layout_marginBottom">@dimen/margin_small</item>
+        <item name="android:background">@color/gray_iii</item>
+    </style>
+
+    <style name="ListViewStytle" parent="@android:style/Widget.ListView.White">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:listSelector">#00000000</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+
+    <style name="TextViewStyle" parent="android:Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/text</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/black_text</item>
+        <item name="android:textSize">@dimen/text_size_i</item>
+    </style>
+
+    <style name="TextViewItemLabelBigStyle" parent="TextViewStyle">
+        <item name="android:layout_width">@dimen/item_label_view_width_big</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/margin_small</item>
+        <item name="android:drawableLeft">@drawable/radio_title_order</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/item_label_text_color</item>
+        <item name="android:textSize">@dimen/text_size_i</item>
+    </style>
+    <style name="TextViewItemLabelStyle" parent="TextViewStyle">
+        <item name="android:layout_width">@dimen/item_label_view_width</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/margin_small</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/item_label_text_color</item>
+        <item name="android:textSize">@dimen/text_size_i</item>
+    </style>
+    <style name="TextViewItemContentStyle" parent="TextViewStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:layout_marginRight">@dimen/margin_medium</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textSize">@dimen/text_size_i</item>
+        <item name="android:textColor">@color/black_text</item>
+    </style>
+
+    <style name="ImageViewStyle" parent="@android:style/Widget.Holo">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:src">@drawable/ic_launcher</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:contentDescription">@string/image_content_description</item>
+    </style>
+
+    <style name="ImageViewMediumStyle" parent="ImageViewStyle">
+        <item name="android:layout_height">@dimen/image_medium_hight</item>
+        <item name="android:layout_width">@dimen/image_medium_width</item>
+    </style>
+
+    <style name="ImageViewHeadStyle" parent="ImageViewStyle">
+        <item name="android:layout_height">@dimen/image_head_height</item>
+        <item name="android:layout_width">@dimen/image_head_width</item>
+    </style>
+
+    <style name="ImageViewSmallStyle" parent="ImageViewStyle">
+        <item name="android:layout_height">@dimen/image_small_hight</item>
+        <item name="android:layout_width">@dimen/image_small_width</item>
+    </style>
+
+    <style name="ImageViewLabelStyle" parent="ImageViewStyle">
+        <item name="android:layout_height">@dimen/image_label_hight</item>
+        <item name="android:layout_width">@dimen/image_label_width</item>
+        <item name="android:padding">@dimen/padding_small</item>
+        <item name="android:layout_margin">@dimen/margin_small</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+
+    <style name="ButtonOneStyle" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/button_one_height</item>
+        <item name="android:background">@drawable/button_select_state</item>
+        <item name="android:textColor">@color/text_select_default</item>
+        <item name="android:textSize">@dimen/button_one_text_size</item>
+    </style>
+
+
+</resources>

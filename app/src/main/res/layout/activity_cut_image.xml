@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.colin.three.CutImageActivity" >
+
+    <include layout="@layout/layout_top_title_bar" />
+
+    <com.colin.hunter.view.CutImageLayout
+        android:id="@+id/cutimagelayout_cut_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button_cut_ok"
+        android:layout_below="@+id/linear_top_title_bar" />
+
+    <Button
+        android:id="@+id/button_cut_ok"
+        style="@style/ButtonOneStyle"
+        android:layout_alignParentBottom="true"
+        android:onClick="buttonClick"
+        android:text="@string/ok" />
+
+</RelativeLayout>

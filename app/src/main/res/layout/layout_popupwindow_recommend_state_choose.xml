@@ -1,0 +1,61 @@
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/radiogroup_popupwindow_recommend_state"
+    android:layout_width="140dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_background_gray"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_medium">
+
+    <RadioButton
+        android:id="@+id/radiobutton_popupwindow_recommend_state_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:drawableLeft="@drawable/radiobutton_select_choose"
+        android:gravity="center"
+        android:padding="@dimen/margin_small"
+        android:singleLine="true"
+        android:text="放弃推荐"
+        android:textColor="@color/black_text"
+        android:textSize="@dimen/text_size_i" />
+
+    <RadioButton
+        android:id="@+id/radiobutton_popupwindow_recommend_state_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:drawableLeft="@drawable/radiobutton_select_choose"
+        android:gravity="center"
+        android:padding="@dimen/margin_small"
+        android:singleLine="true"
+        android:text="offer阶段"
+        android:textColor="@color/black_text"
+        android:textSize="@dimen/text_size_i" />
+
+    <RadioButton
+        android:id="@+id/radiobutton_popupwindow_recommend_state_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:drawableLeft="@drawable/radiobutton_select_choose"
+        android:gravity="center"
+        android:padding="@dimen/margin_small"
+        android:singleLine="true"
+        android:text="已入职"
+        android:textColor="@color/black_text"
+        android:textSize="@dimen/text_size_i" />
+
+    <RadioButton
+        android:id="@+id/radiobutton_popupwindow_recommend_state_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:drawableLeft="@drawable/radiobutton_select_choose"
+        android:gravity="center"
+        android:padding="@dimen/margin_small"
+        android:singleLine="true"
+        android:text="已过保障期"
+        android:textColor="@color/black_text"
+        android:textSize="@dimen/text_size_i" />
+</RadioGroup>

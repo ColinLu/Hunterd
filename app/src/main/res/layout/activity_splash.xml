@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_splash_content"
+    style="@style/AppStyle"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.colin.hunter.SplashActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        style="@style/ImageViewMediumStyle" />
+
+    <TextView
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/splash_welcome"
+        android:textColor="@color/black_text"
+        android:textSize="@dimen/text_size_iv" />
+</LinearLayout>

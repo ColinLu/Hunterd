@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/AppStyle"
+    android:orientation="vertical"
+    tools:context="com.colin.hunter.fragment.CandidateListFragment">
+
+    <com.colin.hunter.view.refreshrecycler.XRecyclerView
+        android:id="@+id/recycler_fragment_item_candidate"
+        android:layout_width="match_parent"
+        android:name="com.colin.hunter.fragment.CandidateListFragment"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layoutManager="LinearLayoutManager"
+        tools:context="com.colin.hunter.fragment.CandidateListFragment"
+        tools:listitem="@layout/item_recycler_candidate"
+        />
+
+</LinearLayout>

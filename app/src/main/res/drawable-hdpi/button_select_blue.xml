@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--按下状态-->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <!-- 背景颜色 -->
+            <solid android:color="@color/button_blue_press" />
+            <!-- 边框颜色大小 -->
+            <stroke android:width="@dimen/button_selector_stroke" android:color="@color/button_blue_press" />
+        </shape>
+    </item>
+
+
+    <!--能获取焦点的时候状态-->
+    <item android:state_enabled="true">
+        <shape android:shape="rectangle">
+            <!-- 背景颜色 -->
+            <solid android:color="@color/blue_app" />
+            <!-- 边框颜色大小 -->
+            <stroke android:width="@dimen/button_selector_stroke" android:color="@color/blue_app" />
+        </shape>
+    </item>
+
+    <!--不能获取焦点的时候状态以及默认状态-->
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <!-- 背景颜色 -->
+            <solid android:color="@color/button_blue_enabled_false" />
+            <!-- 边框颜色大小 -->
+            <stroke android:width="@dimen/button_selector_stroke" android:color="@color/button_blue_enabled_false" />
+        </shape>
+    </item>
+
+    <item>
+        <shape android:shape="rectangle">
+            <!-- 背景颜色 -->
+            <solid android:color="@color/blue_app" />
+            <!-- 边框颜色大小 -->
+            <stroke android:width="@dimen/button_selector_stroke" android:color="@color/blue_app" />
+        </shape>
+    </item>
+
+</selector>

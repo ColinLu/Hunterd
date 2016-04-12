@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:showIn="@layout/fragment_mine">
+
+    <RelativeLayout
+        android:id="@+id/rippleview_mine_company"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_top_bar_height"
+        android:background="@drawable/button_select_white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/item_label_view_width_big"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/radio_title_order"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="公司资料：" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/item_label_view_width_big"
+            android:drawablePadding="3dp"
+            android:drawableRight="@drawable/select_tab_mine"
+            android:gravity="center_vertical|right"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="盈量" />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/LineHorizontalStyle"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/rippleview_mine_collect"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_top_bar_height"
+        android:background="@drawable/button_select_white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/item_label_view_width_big"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/radio_title_order"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="收藏人才：" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/item_label_view_width_big"
+            android:drawablePadding="3dp"
+            android:drawableRight="@drawable/select_tab_mine"
+            android:gravity="center_vertical|right"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="盈量" />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/LineHorizontalStyle"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/rippleview_mine_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_top_bar_height"
+        android:background="@drawable/button_select_white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/item_label_view_width_big"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/radio_title_order"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="专属电话：" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/item_label_view_width_big"
+            android:drawablePadding="3dp"
+            android:drawableRight="@drawable/select_tab_mine"
+            android:gravity="center_vertical|right"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="021-85559966" />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/LineHorizontalStyle"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/rippleview_mine_about"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_top_bar_height"
+        android:background="@drawable/button_select_white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/item_label_view_width_big"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/radio_title_order"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="三顾人才：" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/item_label_view_width_big"
+            android:drawablePadding="3dp"
+            android:drawableRight="@drawable/select_tab_mine"
+            android:gravity="center_vertical|right"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="盈量" />
+
+    </RelativeLayout>
+
+</LinearLayout>

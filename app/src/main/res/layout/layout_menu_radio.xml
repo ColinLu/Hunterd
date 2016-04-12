@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/radio_group_items"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/radio_title_order"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:button="@null"
+        android:drawableTop="@drawable/radio_title_order"
+        android:gravity="center"
+        android:text="@string/radio_title_order"
+        android:textColor="@color/text_select_main_tab"
+        android:textSize="12sp" />
+
+    <View
+        style="@style/LineVerticalStytle"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+
+    <RadioButton
+        android:id="@+id/radio_title_talent"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:button="@null"
+        android:drawableTop="@drawable/select_tab_talent"
+        android:gravity="center"
+        android:text="@string/radio_title_talent"
+        android:textColor="@color/text_select_main_tab"
+        android:textSize="12sp" />
+
+    <View
+        style="@style/LineVerticalStytle"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+
+    <RadioButton
+        android:id="@+id/radio_title_message"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:button="@null"
+        android:drawableTop="@drawable/select_tab_message"
+        android:gravity="center"
+        android:text="@string/radio_title_message"
+        android:textColor="@color/text_select_main_tab"
+        android:textSize="12sp" />
+
+
+    <View
+        style="@style/LineVerticalStytle"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+
+    <RadioButton
+        android:id="@+id/radio_title_mine"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:button="@null"
+        android:drawableTop="@drawable/select_tab_mine"
+        android:gravity="center"
+        android:text="@string/radio_title_mine"
+        android:textColor="@color/text_select_main_tab"
+        android:textSize="12sp" />
+
+</RadioGroup>

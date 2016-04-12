@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main_menu_tab">
+        <item>职位</item>
+        <item>人才</item>
+        <item>消息</item>
+        <item>我的</item>
+    </string-array>
+
+    <string-array name="TopChannelTitle">
+        <item>0,推荐,0,1</item>
+        <item>1,精选,1,1</item>
+        <item>2,上海,2,1</item>
+
+
+        <item>3,时尚,0,0</item>
+        <item>4,科技,1,0</item>
+        <item>5,体育,2,0</item>
+        <item>6,军事,3,0</item>
+        <item>7,财经,4,0</item>
+        <item>8,汽车,5,0</item>
+        <item>9,房产,6,0</item>
+        <item>10,社会,7,0</item>
+        <item>11,NBA,8,0</item>
+        <item>12,情感,9,0</item>
+        <item>13,女人,10,0</item>
+        <item>14,旅游,11,0</item>
+        <item>15,健康,12,0</item>
+        <item>16,美女,13,0</item>
+        <item>17,游戏,14,0</item>
+        <item>18,数码,15,0</item>
+        <item>19,娱乐,16,0</item>
+    </string-array>
+    <string-array name="recommend_record_state">
+        <item>全部</item>
+        <item>进程中</item>
+        <item>简历不合适</item>
+        <item>面试不合适</item>
+        <item>未过保障期</item>
+    </string-array>
+</resources>

@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator_release_position"
+    style="@style/AppStyle"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ReleasePositionActivity">
+
+    <include layout="@layout/layout_top_title_bar" />
+
+    <TextView
+        android:id="@+id/text_release_position_recommend_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_small"
+        android:background="@color/white"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/text_release_position_recommend_number" />
+
+    <View style="@style/LineHorizontalStyle" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:scrollbars="none"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/linear_release_position_time"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_top_bar_height"
+                android:background="@drawable/button_select_white"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/text_release_position_time_label"
+                    style="@style/TextViewItemLabelStyle"
+                    android:text="@string/text_orderlist_time_label" />
+
+                <TextView
+                    android:id="@+id/text_release_position_time"
+                    style="@style/TextViewItemContentStyle"
+                    android:text="@string/text_orderlist_time" />
+            </LinearLayout>
+
+            <View style="@style/LineHorizontalStyle" />
+
+            <LinearLayout
+                android:id="@+id/linear_release_profession_position"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_top_bar_height"
+                android:background="@drawable/button_select_white"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/text_release_profession_position_label"
+                    style="@style/TextViewItemLabelStyle"
+                    android:text="@string/text_release_profession_position_label" />
+
+                <TextView
+                    android:id="@+id/text_release_position_position"
+                    style="@style/TextViewItemContentStyle"
+                    android:text="@string/text_release_profession_position" />
+            </LinearLayout>
+
+            <View style="@style/LineHorizontalStyle" />
+
+            <LinearLayout
+                android:id="@+id/linear_release_profession_city"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_top_bar_height"
+                android:background="@drawable/button_select_white"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/text_release_profession_city_label"
+                    style="@style/TextViewItemLabelStyle"
+                    android:text="@string/text_release_profession_city_label" />
+
+                <TextView
+                    android:id="@+id/text_release_position_city"
+                    style="@style/TextViewItemContentStyle"
+                    android:text="@string/text_release_profession_city" />
+            </LinearLayout>
+
+
+            <View style="@style/LineHorizontalStyle" />
+
+            <LinearLayout
+                android:id="@+id/linear_release_profession_company"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_top_bar_height"
+                android:background="@drawable/button_select_white">
+
+                <TextView
+                    android:id="@+id/text_release_profession_company_label"
+                    style="@style/TextViewItemLabelStyle"
+                    android:text="@string/text_release_profession_company_label" />
+
+                <TextView
+                    android:id="@+id/text_release_position_company"
+                    style="@style/TextViewItemContentStyle"
+                    android:text="@string/text_release_profession_company" />
+            </LinearLayout>
+
+            <View style="@style/LineHorizontalStyle" />
+
+            <LinearLayout
+                android:id="@+id/linear_release_profession_vacancy"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_top_bar_height"
+                android:background="@drawable/button_select_white">
+
+                <TextView
+                    android:id="@+id/text_release_profession_vacancy_label"
+                    style="@style/TextViewItemLabelStyle"
+                    android:text="@string/text_release_profession_vacancy_label" />
+
+                <TextView
+                    android:id="@+id/text_release_position_vacancy"
+                    style="@style/TextViewItemContentStyle"
+                    android:text="@string/text_release_profession_vacancy" />
+            </LinearLayout>
+
+            <View style="@style/LineHorizontalStyle" />
+
+            <LinearLayout
+                android:id="@+id/linear_release_profession_profession"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_top_bar_height"
+                android:background="@drawable/button_select_white">
+
+                <TextView
+                    android:id="@+id/text_release_profession_profession_label"
+                    style="@style/TextViewItemLabelStyle"
+                    android:text="@string/text_release_profession_profession_label" />
+
+                <TextView
+                    android:id="@+id/text_release_position_profession"
+                    style="@style/TextViewItemContentStyle"
+                    android:text="@string/text_release_profession_profession" />
+            </LinearLayout>
+
+            <View style="@style/LineHorizontalStyle" />
+
+            <LinearLayout
+                android:id="@+id/linear_release_profession_function"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_top_bar_height"
+                android:background="@drawable/button_select_white">
+
+                <TextView
+                    android:id="@+id/text_release_profession_function_label"
+                    style="@style/TextViewItemLabelStyle"
+                    android:text="@string/text_release_profession_function_label" />
+
+                <TextView
+                    android:id="@+id/text_release_position_function"
+                    style="@style/TextViewItemContentStyle"
+                    android:text="@string/text_release_profession_function" />
+            </LinearLayout>
+
+            <View style="@style/LineHorizontalStyle" />
+
+            <LinearLayout
+                android:id="@+id/linear_release_profession_annual_salary"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_top_bar_height"
+                android:background="@drawable/button_select_white">
+
+                <TextView
+                    android:id="@+id/text_release_profession_annual_salary_label"
+                    style="@style/TextViewItemLabelStyle"
+                    android:text="@string/text_release_profession_annual_salary_label" />
+
+                <TextView
+                    android:id="@+id/text_release_position_annual_salary"
+                    style="@style/TextViewItemContentStyle"
+                    android:text="@string/text_release_profession_annual_salary" />
+            </LinearLayout>
+
+            <View style="@style/LineHorizontalStyle" />
+
+            <LinearLayout
+                android:id="@+id/linear_release_profession_report_to"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_top_bar_height"
+                android:background="@drawable/button_select_white">
+
+                <TextView
+                    android:id="@+id/text_release_profession_report_to_label"
+                    style="@style/TextViewItemLabelStyle"
+                    android:text="@string/text_release_profession_report_to_label" />
+
+                <TextView
+                    android:id="@+id/text_release_position_report_to"
+                    style="@style/TextViewItemContentStyle"
+                    android:text="@string/text_release_profession_report_to" />
+            </LinearLayout>
+
+            <View style="@style/LineHorizontalStyle" />
+
+            <LinearLayout
+                android:id="@+id/linear_release_profession_job_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_select_white">
+
+                <TextView
+                    android:id="@+id/text_release_profession_job_description_label"
+                    android:layout_width="@dimen/item_label_view_width"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:gravity="top|center_horizontal"
+                    android:paddingTop="@dimen/padding_small"
+                    android:text="@string/text_release_profession_job_description_label"
+                    android:textColor="@color/item_label_text_color"
+                    android:textSize="@dimen/text_size_i" />
+
+                <TextView
+                    android:id="@+id/text_release_position_job_description"
+                    style="@style/TextViewItemContentStyle"
+                    android:gravity="left|top"
+                    android:maxLines="5"
+                    android:minLines="5"
+                    android:padding="@dimen/padding_small"
+                    android:singleLine="false"
+                    android:text="@string/text_release_profession_job_description" />
+            </LinearLayout>
+
+            <View style="@style/LineHorizontalStyle" />
+
+            <LinearLayout
+                android:id="@+id/linear_release_profession_job_requirements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_select_white">
+
+                <TextView
+                    android:id="@+id/text_release_profession_job_requirements_label"
+                    android:layout_width="@dimen/item_label_view_width"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:gravity="top|center_horizontal"
+                    android:paddingTop="@dimen/padding_small"
+                    android:text="@string/text_release_profession_job_requirements_label"
+                    android:textColor="@color/item_label_text_color"
+                    android:textSize="@dimen/text_size_i" />
+
+                <TextView
+                    android:id="@+id/text_release_position_job_requirements"
+                    style="@style/TextViewItemContentStyle"
+                    android:gravity="left|top"
+                    android:maxLines="5"
+                    android:minLines="5"
+                    android:padding="@dimen/padding_small"
+                    android:singleLine="false"
+                    android:text="@string/text_release_profession_job_requirements" />
+            </LinearLayout>
+
+            <View style="@style/LineHorizontalStyle" />
+
+            <LinearLayout
+                android:id="@+id/linear_release_profession_Job_selling_point"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_select_white">
+
+                <TextView
+                    android:id="@+id/text_release_profession_job_selling_point_label"
+                    android:layout_width="@dimen/item_label_view_width"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:gravity="top|center_horizontal"
+                    android:paddingTop="@dimen/padding_small"
+                    android:text="@string/text_release_profession_job_selling_point_label"
+                    android:textColor="@color/item_label_text_color"
+                    android:textSize="@dimen/text_size_i" />
+
+                <TextView
+                    android:id="@+id/text_release_position_job_selling_point"
+                    style="@style/TextViewItemContentStyle"
+                    android:gravity="left|top"
+                    android:maxLines="5"
+                    android:minLines="5"
+                    android:padding="@dimen/padding_small"
+                    android:singleLine="false"
+                    android:text="@string/text_release_profession_job_selling_point" />
+            </LinearLayout>
+
+            <View style="@style/LineHorizontalStyle" />
+
+            <LinearLayout
+                android:id="@+id/linear_release_profession_interview_address"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_top_bar_height"
+                android:background="@drawable/button_select_white">
+
+                <TextView
+                    android:id="@+id/text_release_profession_interview_address_label"
+                    style="@style/TextViewItemLabelStyle"
+                    android:text="@string/text_release_profession_interview_address_label" />
+
+                <TextView
+                    android:id="@+id/text_release_position_interview_address"
+                    style="@style/TextViewItemContentStyle"
+                    android:text="@string/text_release_profession_city" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linear_release_position_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_top_bar_height"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_release_position_reject"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_select_blue"
+            android:gravity="center"
+            android:text="@string/button_orderlist_reject"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_ii"
+            android:visibility="visible" />
+
+        <View
+            style="@style/LineVerticalStytle"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_small" />
+
+        <Button
+            android:id="@+id/button_release_position_receive"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_select_blue"
+            android:gravity="center"
+            android:text="@string/button_orderlist_receive"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_ii"
+            android:visibility="visible" />
+    </LinearLayout>
+</LinearLayout>

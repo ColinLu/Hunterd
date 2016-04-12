@@ -1,0 +1,120 @@
+<resources>
+    <string name="empty">""</string>
+    <string name="app_name">猎头</string>
+    <string name="action_settings">设置</string>
+    <string name="ok">确认</string>
+    <string name="cancel">取消</string>
+    <string name="image_content_description">图片内容描述</string>
+    <string name="text">文本内容</string>
+    <string name="sex">男</string>
+    <string name="splash_welcome">欢迎使用三顾人才\n猎头端</string>
+    <string name="radio_title_order">派单</string>
+    <string name="radio_title_talent">人才</string>
+    <string name="radio_title_message">消息</string>
+    <string name="radio_title_mine">我的</string>
+
+    <string name="listview_header_hint_normal">下拉刷新</string>
+    <string name="listview_header_hint_release">释放立即刷新</string>
+    <string name="listview_loading">正在加载...</string>
+    <string name="nomore_loading">没有了</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_done">刷新完成</string>
+    <string name="listview_header_last_time">上次更新时间：</string>
+
+
+    <!-- 登录界面 LoginActivity-->
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="login_requestion">登录遇到问题？</string>
+    <string name="text_login_phone_label">+86</string>
+    <string name="text_login_password_label">密码</string>
+    <string name="edit_login_phone_hint">你的手机号码</string>
+    <string name="edit_login_password_hint">填写密码</string>
+    <string name="edit_register_nick_hint">例如：Colin</string>
+    <string name="text_register_nick_label">昵称</string>
+    <string name="text_login_country_label">国家和地区</string>
+    <string name="text_login_country">中国</string>
+
+
+    <!-- PopupWindow-->
+    <string name="button_popupwindow_head_camera">相机</string>
+    <string name="button_popupwindow_head_album">相册</string>
+
+
+    <!-- 候选人界面 CandidateListFragment-->
+    <string name="title_activity_candidate">职位候选人</string>
+    <string name="text_item_candidate_introduce">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</string>
+    <string name="text_item_candidate_introduce_label">推荐理由</string>
+    <string name="text_item_candidate_state">状态</string>
+    <string name="text_item_candidate_name">Colin</string>
+    <string name="text_item_candidate_sex">男</string>
+    <string name="text_item_candidate_age">35岁</string>
+    <string name="text_item_candidate_salary">45万</string>
+    <!-- 用户信息界面 UserActivity-->
+
+    <string name="title_activity_user">个人资料</string>
+    <string name="text_user_name_label">登录名：</string>
+    <string name="text_user_name">我是好人</string>
+    <string name="text_user_company_label">所属公司：</string>
+    <string name="text_user_company">万科上海</string>
+    <string name="text_user_validity_label">有效期：</string>
+    <string name="text_user_validity">2016/12</string>
+    <string name="text_user_contact_label">联系方式：</string>
+    <string name="text_user_contact">15655666566</string>
+    <string name="text_user_email_label">邮箱：</string>
+    <string name="text_user_email">222222222@126.com</string>
+    <string name="edit">编辑</string>
+    <string name="edit_popupwindow_edit_content_hint">请输入内容。。。</string>
+
+    <!-- 推荐人才职位界面 ReleasePositionActivity-->
+    <string name="title_activity_release_profession">发布职位</string>
+    <string name="next">下一步</string>
+
+    <string name="text_release_profession_interview_address_label">面试地址：</string>
+    <string name="text_release_profession_company_label">公\t\t\t\t司：</string>
+    <string name="text_release_position_recommend_number">此职位有3人在进程中</string>
+    <string name="text_orderlist_time_label">派单时间：</string>
+    <string name="text_orderlist_time">2016.3.15.18:50</string>
+    <string name="text_release_profession_company">上海万科</string>
+    <string name="text_release_profession_city_label">城\t\t\t\t市：</string>
+    <string name="text_release_profession_city">上海</string>
+    <string name="text_release_profession_email_label">邮\t\t\t\t箱：</string>
+    <string name="text_release_profession_profession">行业</string>
+    <string name="text_release_profession_profession_label">行\t\t\t\t业：</string>
+    <string name="text_release_profession_function_label">职\t\t\t\t能：</string>
+    <string name="text_release_profession_function">工程</string>
+    <string name="text_release_profession_annual_salary">500000</string>
+    <string name="text_release_profession_annual_salary_label">年\t\t\t\t薪：</string>
+    <string name="text_release_profession_report_to">工程总监</string>
+    <string name="text_release_profession_report_to_label">汇报对象：</string>
+    <string name="text_release_profession_job_description">职位描述职位描述职位描述职位描述职位描述职位描述职位描述职位描述职位描述职位描述职位描述职位描述职位描述职位描述职位描述职位描述职位描述职位描述职位描述职位描述职位描述职位描述</string>
+    <string name="text_release_profession_job_description_label">职位描述：</string>
+    <string name="text_release_profession_job_requirements">职位要求</string>
+    <string name="text_release_profession_job_requirements_label">职位要求：</string>
+    <string name="text_release_profession_job_selling_point">职位卖点</string>
+    <string name="text_release_profession_job_selling_point_label">职位卖点：</string>
+    <string name="text_release_profession_position_label">职\t\t\t\t位：</string>
+    <string name="text_release_profession_position">工程经理</string>
+    <string name="text_release_profession_vacancy">空缺</string>
+    <string name="text_release_profession_vacancy_label">空\t\t\t\t缺：</string>
+    <string name="button_release_profession_state">职位状态</string>
+    <string name="button_release_profession_update">更新职位</string>
+    <string name="button_orderlist_reject">拒接接单</string>
+    <string name="button_orderlist_receive">接单</string>
+
+
+    <string name="text_item_order_recommend">推荐人才</string>
+    <string name="text_item_order_recommend_state">已推荐</string>
+    <string name="text_item_order_feedback">反馈记录（0）</string>
+
+
+    <!--反馈记录界面-->
+    <string name="text_item_feedback_hr">HR</string>
+    <string name="text_recommendlist_number">ddd</string>
+    <string name="spinner_recommendlist_state">状态选择</string>
+
+
+    <!--其他手机app跳转过来的阅览简历的界面-->
+    <string name="cannot_open_document_Reason">无法打开文档： %1$s</string>
+    <string name="dismiss">解除</string>
+</resources>

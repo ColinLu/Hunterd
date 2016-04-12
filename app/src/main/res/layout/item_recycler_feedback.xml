@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/text_item_feedback_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/padding_small"
+        android:text="@string/text_orderlist_time"
+        android:textSize="@dimen/font_size_12" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_marginRight="@dimen/margin_small"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_item_feedback_hr"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_small"
+            android:gravity="center"
+            android:padding="@dimen/padding_small"
+            android:textColor="@color/black_text"
+            android:text="@string/text_item_feedback_hr"
+            android:textSize="@dimen/text_size_i" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/view_border_rectangle"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_item_feedback_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_small"
+                android:gravity="center|left"
+                android:padding="@dimen/padding_small"
+                android:singleLine="true"
+                android:text="简历不合适"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/text_size_i"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_item_feedback_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:minLines="2"
+                android:padding="@dimen/padding_small"
+                android:text="候选人经验不足"
+                android:textSize="@dimen/text_size_i" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_register_content"
+    style="@style/AppStyle"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.colin.hunter.RegisterActivity">
+
+    <include layout="@layout/layout_toolbar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:padding="12dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_top_bar_height">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputlayout_register_nick"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/image_register_head">
+
+                <EditText
+                    android:id="@+id/edit_register_nick"
+                    style="@style/EditViewItemStyle"
+                    android:hint="@string/edit_register_nick_hint" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/text_register_nick_label"
+                style="@style/TextViewItemLabelStyle"
+                android:layout_alignLeft="@id/inputlayout_register_nick"
+                android:text="@string/text_register_nick_label" />
+
+            <ImageView
+                android:id="@+id/image_register_delete_nick"
+                android:layout_width="@dimen/image_label_small_width"
+                android:layout_height="@dimen/image_label_small_hight"
+                android:layout_toLeftOf="@+id/image_register_head"
+                android:padding="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image_edit_clear"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/image_register_head"
+                style="@style/ImageViewLabelStyle"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_launcher" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_top_bar_height">
+
+            <TextView
+                android:id="@+id/text_login_country_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/text_login_country_label"
+                android:textColor="#353535"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/text_login_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="@string/text_login_country"
+                android:textColor="#45c01a"
+                android:textSize="16sp" />
+
+            <View
+                style="@style/LineHorizontalStyle"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_top_bar_height">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputlayout_register_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/edit_register_phone"
+                    style="@style/EditViewItemStyle"
+                    android:gravity="center_vertical"
+                    android:hint="@string/edit_login_phone_hint"
+                    android:inputType="phone"
+                    android:textColorHint="@color/item_label_text_hint_color" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/text_register_phone_label"
+                style="@style/TextViewItemLabelStyle"
+                android:layout_alignLeft="@id/inputlayout_register_phone"
+                android:text="@string/text_login_phone_label" />
+
+            <ImageView
+                android:id="@+id/image_register_delete_phone"
+                android:layout_width="@dimen/image_label_small_width"
+                android:layout_height="@dimen/image_label_small_hight"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image_edit_clear"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_top_bar_height">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputlayout_register_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/edit_register_password"
+                    style="@style/EditViewItemStyle"
+                    android:hint="@string/edit_login_password_hint"
+                    android:paddingLeft="@dimen/item_label_view_width"
+                    android:password="true" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/text_register_password_label"
+                style="@style/TextViewItemLabelStyle"
+                android:layout_alignLeft="@id/inputlayout_register_password"
+                android:text="@string/text_login_password_label" />
+
+            <ImageView
+                android:id="@+id/image_register_delete_password"
+                android:layout_width="@dimen/image_label_small_width"
+                android:layout_height="@dimen/image_label_small_hight"
+                android:layout_toLeftOf="@+id/image_register_password_hide"
+                android:padding="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image_edit_clear"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/image_register_password_hide"
+                android:layout_width="@dimen/image_label_small_width"
+                android:layout_height="@dimen/image_label_small_hight"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image_select_eye" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button_register"
+            style="@style/ButtonOneStyle"
+            android:layout_marginTop="50dp"
+            android:enabled="false"
+            android:text="@string/ok" />
+
+        <TextView
+            android:id="@+id/text_register_xieyi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

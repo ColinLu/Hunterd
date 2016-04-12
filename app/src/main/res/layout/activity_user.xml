@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinator_user_content"
+    style="@style/AppStyle"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/layout_toolbar_image" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linear_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_top_bar_height"
+                android:background="@drawable/button_select_white">
+
+                <TextView
+                    android:id="@+id/text_user_name_label"
+                    android:layout_width="@dimen/item_label_view_width_big"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/radio_title_order"
+                    android:drawablePadding="3dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/text_user_name_label" />
+
+                <TextView
+                    android:id="@+id/text_user_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawablePadding="3dp"
+                    android:drawableRight="@mipmap/go_to_icon"
+                    android:gravity="center_vertical|right"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/text_user_name" />
+            </LinearLayout>
+
+            <View
+                style="@style/LineHorizontalStyle"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+
+            <LinearLayout
+                android:id="@+id/linear_user_company"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_top_bar_height"
+                android:background="@drawable/button_select_white">
+
+                <TextView
+                    android:id="@+id/text_user_company_label"
+                    android:layout_width="@dimen/item_label_view_width_big"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/radio_title_order"
+                    android:drawablePadding="3dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/text_user_company_label" />
+
+                <TextView
+                    android:id="@+id/text_user_company"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawablePadding="3dp"
+                    android:drawableRight="@mipmap/go_to_icon"
+                    android:gravity="center_vertical|right"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/text_user_company" />
+            </LinearLayout>
+
+            <View
+                style="@style/LineHorizontalStyle"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <LinearLayout
+                android:id="@+id/linear_user_validity"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_top_bar_height"
+                android:background="@drawable/button_select_white">
+
+                <TextView
+                    android:id="@+id/text_user_validity_label"
+                    android:layout_width="@dimen/item_label_view_width_big"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/radio_title_order"
+                    android:drawablePadding="3dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/text_user_validity_label" />
+
+                <TextView
+                    android:id="@+id/text_user_validity"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawablePadding="3dp"
+                    android:drawableRight="@mipmap/go_to_icon"
+                    android:gravity="center_vertical|right"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/text_user_validity" />
+            </LinearLayout>
+
+            <View
+                style="@style/LineHorizontalStyle"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <LinearLayout
+                android:id="@+id/linear_user_contact"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_top_bar_height"
+                android:background="@drawable/button_select_white">
+
+                <TextView
+                    android:id="@+id/text_user_contact_label"
+                    android:layout_width="@dimen/item_label_view_width_big"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/radio_title_order"
+                    android:drawablePadding="3dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/text_user_contact_label" />
+
+                <TextView
+                    android:id="@+id/text_user_contact"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawablePadding="3dp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/text_user_contact" />
+
+                <TextView
+                    android:id="@+id/text_user_contact_edit"
+                    android:layout_width="@dimen/item_label_view_width"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/edit"
+                    android:textColor="@color/blue_app" />
+            </LinearLayout>
+
+            <View
+                style="@style/LineHorizontalStyle"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <LinearLayout
+                android:id="@+id/linear_user_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_top_bar_height"
+                android:background="@drawable/button_select_white">
+
+                <TextView
+                    android:id="@+id/text_user_email_label"
+                    android:layout_width="@dimen/item_label_view_width_big"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/radio_title_order"
+                    android:drawablePadding="3dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/text_user_email_label" />
+
+                <TextView
+                    android:id="@+id/text_user_email"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawablePadding="3dp"
+                    android:drawableRight="@mipmap/back"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/text_user_email" />
+
+                <TextView
+                    android:id="@+id/text_user_email_edit"
+                    android:layout_width="@dimen/item_label_view_width"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/edit"
+                    android:textColor="@color/blue_app" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppStyle"
+    android:orientation="vertical"
+    tools:context="com.colin.hunter.GetCurriculumVitaeActivity">
+
+    <include layout="@layout/layout_top_title_bar" />
+
+    <com.joanzapata.pdfview.PDFView
+        android:id="@+id/pdfview_curriculum_vitae"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

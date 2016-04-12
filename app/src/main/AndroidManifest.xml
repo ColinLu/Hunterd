@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.colin.hunter">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".WebViewActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".CutImageActivity" />
+        <activity android:name=".UserActivity" />
+        <activity android:name=".ReleasePositionActivity" />
+        <activity android:name=".CandidateDetailActivity" />
+        <activity android:name=".FeedbackRecordListActivity" />
+        <activity android:name=".CandidateRecommendStateActivity" />
+        <activity android:name=".RecommendRecordListActivity" />
+        <activity android:name=".RecommendPositionListActivity" />
+        <!-- 为了发送数据到另外一个activity，你需要做的是指定数据与数据的类型，系统会识别出能够兼容接受的这些数据的activity并 -->
+        <!-- 且把这些activity显示给用户进行选择(如果有多个选择)，或者是立即启动Activity(只有一个兼容的选择)。同样的，你可以在 -->
+        <!-- manifest文件的Activity描述中添加接受哪些数据类型。 -->
+        <!-- 如果设备上有安装某个能够匹配ACTION_SEND与MIME类型为text/plain程序，那么Android系统会自动把他们都给筛选出 -->
+        <!-- 来，并呈现Dialog给用户进行选择。如果你为intent调用了Intent.createChooser()，那么Android总是会显示可供选择。这样 -->
+        <!-- 有一些好处： -->
+        <!-- 即使用户之前为这个intent设置了默认的action，选择界面还是会被显示。 -->
+        <!-- 如果没有匹配的程序，Android会显示系统信息。 -->
+        <!-- 你可以指定选择界面的标题。 -->
+        <activity android:name=".GetCurriculumVitaeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/pdf" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

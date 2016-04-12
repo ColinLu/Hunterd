@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text_item_candidate_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_small"
+    android:background="@drawable/view_label"
+    android:gravity="center"
+    android:paddingLeft="@dimen/padding_small"
+    android:paddingRight="@dimen/padding_small"
+    android:singleLine="true"
+    android:text="我是好人"
+    android:textColor="@color/black_text"
+    android:textSize="@dimen/text_size_i"></TextView>

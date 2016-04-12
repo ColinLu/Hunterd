@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/title_top_bar_height"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.colin.hunter.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/title_top_bar_height_small" />
+
+    <LinearLayout
+        android:id="@+id/linear_main_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_top_bar_height_small"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_menu_radio" />
+    </LinearLayout>
+</RelativeLayout>

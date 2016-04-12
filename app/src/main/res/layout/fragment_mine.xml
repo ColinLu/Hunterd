@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativie_mine_user"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_select_white"
+        android:clickable="true"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            style="@style/ImageViewLabelStyle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:id="@+id/ll_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@id/iv_avatar"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="#353535"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv_sex"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/ic_launcher"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_fxid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/iv_avatar"
+            android:text="@string/app_name"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="32dp"
+            android:src="@drawable/ic_launcher" />
+    </RelativeLayout>
+
+    <com.colin.hunter.view.pulltozoomscrollviewex.PullToZoomScrollViewEx
+        android:id="@+id/pulltozoomscrollviewex_mine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" />
+</LinearLayout>
